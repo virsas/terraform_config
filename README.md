@@ -15,5 +15,7 @@ module "config-eu-west-1" {
   frequency = "TwentyFour_Hours"
   // Default value: eu-west-1
   region = "eu-west-1"
+  // The account ID
+  organization = "123456789012"
 }
 ```
