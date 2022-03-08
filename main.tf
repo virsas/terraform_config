@@ -9,7 +9,7 @@ resource "aws_config_configuration_recorder" "recorder" {
 }
 
 resource "aws_config_delivery_channel" "config" {
-  name           = ws_config_configuration_recorder.recorder.name
+  name           = aws_config_configuration_recorder.recorder.name
   s3_bucket_name = var.bucket
 
   snapshot_delivery_properties {
