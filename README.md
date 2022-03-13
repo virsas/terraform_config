@@ -1,4 +1,4 @@
-# tfmod_config
+# terraform_config
 
 Terraform module to enable AWS config service
 
@@ -6,7 +6,7 @@ Terraform module to enable AWS config service
 
 ``` terraform
 module "config-eu-west-1" {
-  source = "github.com/virsas/tfmod_config"
+  source = "github.com/virsas/terraform_config"
   name = "config-eu-west-1"
   bucket = module.s3_config.name
   // Optional variables 
