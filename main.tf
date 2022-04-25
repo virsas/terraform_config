@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_config_configuration_recorder" "recorder" {
   name     = var.name
   role_arn = "arn:aws:iam::${var.organization}:role/aws-service-role/config.amazonaws.com/AWSServiceRoleForConfig"
