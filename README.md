@@ -6,7 +6,7 @@ Terraform module to enable AWS config service
 
 ``` terraform
 module "config-eu-west-1" {
-  source = "github.com/virsas/terraform_config"
+  source = "git::https://github.com/virsas/terraform_config.git?ref=v1.0.0"
   name = "config-eu-west-1"
   bucket = module.s3_config.name
   // Optional variables 
